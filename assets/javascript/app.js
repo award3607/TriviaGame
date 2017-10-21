@@ -6,7 +6,6 @@ var question0 = {
 				"Poughkeepsie",
 				"Transylvania"],
 	correctAnswerIndex: 3,
-	image: ""
 }
 
 var question1 = {
@@ -17,7 +16,6 @@ var question1 = {
 				"Dr. Frankenfurter",
 				"Dr. Pepper"],
 	correctAnswerIndex: 1,
-	image: ""
 }
 
 var question2 = {
@@ -28,7 +26,6 @@ var question2 = {
 				"Black Lagoon",
 				"Red Sea"],
 	correctAnswerIndex: 2,
-	image: ""
 }
 
 var question3 = {
@@ -39,18 +36,16 @@ var question3 = {
 				"Otter",
 				"Squid"],
 	correctAnswerIndex: 3,
-	image: ""
 }
 
 var question4 = {
 	id: "q4",
-	questionText: "What normal sized animal was the title of an Alfred Hitchcock horror movie?",
+	questionText: "What common animal was the title creature of an Alfred Hitchcock horror movie?",
 	answers: ["Birds", 
 				"Bees",
 				"Ants",
 				"Rats"],
 	correctAnswerIndex: 0,
-	image: ""
 }
 
 var questions = [];
@@ -85,7 +80,7 @@ var Game = {
 	},
 
 	displayDoneButton: function() {
-		var button = $("<button>").attr("type", "button").addClass("btn btn-warning").text("Done");
+		var button = $("<button>").attr("type", "button").addClass("btn").text("Done");
 		$("#display-area").append(button);
 
 	},
@@ -147,9 +142,9 @@ var Game = {
 	displayResults: function() {
 		var display = $("#display-area");
 		display.empty();
-		display.append($("<p>").text("Number correct: " + this.correct));
-		display.append($("<p>").text("Number incorrect: " + this.incorrect));
-		display.append($("<p>").text("Number unanswered: " + this.unanswered));
+		display.append($("<p>").text("Correct: " + this.correct));
+		display.append($("<p>").text("Incorrect: " + this.incorrect));
+		display.append($("<p>").text("Unanswered: " + this.unanswered));
 	}
 }
 
