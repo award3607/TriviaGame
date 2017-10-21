@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Trivia Game</title>
 	<script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
@@ -12,15 +13,16 @@
 <body>
 	<div class="container">
 		<div class="jumbotron text-center">
-			<h1>Trivia Game</h1>
+			<h1>Movie Monster Trivia Game</h1>
 		</div>
 		<div class="row">
 			<div class="col-md-12 well text-center">
-				<h3 class="timer">Timer placeholder</h3>
+				<h3>Time left: <span id="timer">30</span></h3>
 			</div>
 		</div>
 		<div class="row">
 			<div id="display-area" class="col-md-12 well text-center">
+				<button id="start-button" type="button">Start the game!</button>
 			</div>
 		</div>
 	</div>
