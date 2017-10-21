@@ -131,8 +131,6 @@ var Game = {
 		divs.map(function(div) {
 			var correctAnswer = $(this).data("correct");
 			var choice = $(this).find("input:checked").data("choice");
-			console.log("Correct answer: " + correctAnswer);
-			console.log("Choice: " + choice);
 			if(correctAnswer === choice) {
 				Game.correct++;
 			}
@@ -158,4 +156,3 @@ var Game = {
 $("#start-button").on("click", function() {
 	Game.initGame();
 });
-// Game.initGame();
